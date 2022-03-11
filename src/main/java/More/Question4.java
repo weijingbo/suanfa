@@ -1,6 +1,5 @@
 package More;
 
-import org.jetbrains.annotations.NotNull;
 
 public class Question4 {
     /***
@@ -22,24 +21,24 @@ public class Question4 {
      * 解释：合并数组 = [1,2,3,4] ，中位数 (2 + 3) / 2 = 2.5
      */
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int s1=0,s2=0;
-        int e1= nums1.length,e2 =nums2.length;
-        while(s1<e1 &&s2<e2){
-            if(nums1[s1]<nums2[s2]){
-                s1++;
-            }else{
-                s2++;
-            }
-            if(nums1[e1]>nums2[e2]){
-                e1--;
-            }else {
-                e2--;
-            }
-        }
-        System.out.println(nums1[s1]);
-        System.out.println(nums1[e1]);
-        System.out.println(nums2[s2]);
-        System.out.println(nums2[e2]);
+//        int s1=0,s2=0;
+//        int e1= nums1.length,e2 =nums2.length;
+//        while(s1<e1 &&s2<e2){
+//            if(nums1[s1]<nums2[s2]){
+//                s1++;
+//            }else{
+//                s2++;
+//            }
+//            if(nums1[e1]>nums2[e2]){
+//                e1--;
+//            }else {
+//                e2--;
+//            }
+//        }
+//        System.out.println(nums1[s1]);
+//        System.out.println(nums1[e1]);
+//        System.out.println(nums2[s2]);
+//        System.out.println(nums2[e2]);
         return 0;
     }
 
