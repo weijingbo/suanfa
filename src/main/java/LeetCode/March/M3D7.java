@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.March;
 
 public class M3D7 {
     public String convertToBase7(int num) {

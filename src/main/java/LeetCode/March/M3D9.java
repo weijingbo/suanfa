@@ -1,6 +1,4 @@
-package LeetCode;
-
-import java.util.Arrays;
+package LeetCode.March;
 
 public class M3D9 {
     /***
