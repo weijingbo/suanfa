@@ -104,15 +104,15 @@
         <!-- Unit Testing -->
         <dependency>
             <groupId>org.apache.tapestry</groupId>
-            <artifactId>tapestry-test</artifactId>
+            <artifactId>tapestry-testsss</artifactId>
             <version>${tapestry-version}</version>
-            <scope>test</scope>
+            <scope>testsss</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>${junit-version}</version>
-            <scope>test</scope>
+            <scope>testsss</scope>
         </dependency>
         <!-- Miscellaneous -->
         <dependency>

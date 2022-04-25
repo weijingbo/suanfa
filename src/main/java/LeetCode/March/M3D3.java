@@ -3,9 +3,7 @@ package LeetCode.March;
 public class M3D3 {
     /***
      * 给定一个非负整数 num，反复将各个位上的数字相加，直到结果为一位数。返回这个结果。
-     *
-     *  
-     *
+
      * 示例 1:
      *
      * 输入: num = 38

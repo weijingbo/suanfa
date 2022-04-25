@@ -4,9 +4,6 @@ public class M3D7 {
     public String convertToBase7(int num) {
         /***
          * 给定一个整数 num，将其转化为 7 进制，并以字符串形式输出。
-         *
-         *  
-         *
          * 示例 1:
          *
          * 输入: num = 100
@@ -15,11 +12,9 @@ public class M3D7 {
          *
          * 输入: num = -7
          * 输出: "-10"
-         *  
-         *
          * 提示：
          *
-         * -107 <= num <= 107
+         * -107<= num <= 107
          *
          */
         int flag = num>=0? 0:1;
