@@ -1,4 +1,4 @@
-package LeetCode.zhitongche;
+package LeetCode.August.zhitongche;
 
 public class FindKthBit {
     public char findKthBit(int n, int k) {

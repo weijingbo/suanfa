@@ -55,21 +55,7 @@ public class M3D16 {
         return  mins;
     }
 
-    public int maxSubArray(int[] nums) {
-        int max = Integer.MIN_VALUE;
-        for(int i = 0;i< nums.length; i++){
-            for(int k = i;k<nums.length; k++){
-                int temp = 0;
-                for(int j = i; j<=k;j++){
-                    temp += nums[j];
-                }
-                if(temp>max){
-                    max = temp;
-                }
-            }
-        }
-        return max;
-    }
+
 
     public int lengthOfLastWord(String s) {
         String[] strs = s.split(" ");

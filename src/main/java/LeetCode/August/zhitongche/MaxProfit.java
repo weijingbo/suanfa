@@ -1,7 +1,4 @@
-package LeetCode.zhitongche;
-
-import java.util.Random;
-import java.util.Scanner;
+package LeetCode.August.zhitongche;
 
 public class MaxProfit {
     public int maxProfit(int[] prices) {
