@@ -1,13 +1,4 @@
 一个刷leetcode的小仓库
 自己用的
-### 已完成的题目
-
-
-
-### 每日一题
-    3月9日 798. 得分最高的最小轮调
-    3月8日 2055. 蜡烛之间的盘子
-    3月7日 504. 七进制数
-    3月6日 2100. 适合打劫银行的日子
-    3月5日 521. 最长特殊序列 Ⅰ
-    3月4日 2104. 子数组范围和
+## [2022年9月刷题](src/main/java/LeetCode/September/September.md)
+## [2022年10月刷题](src/main/java/LeetCode/October/October.md)
