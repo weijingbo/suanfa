@@ -1,6 +1,6 @@
 package Base;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class sort {
     /**
@@ -169,5 +169,50 @@ public class sort {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
+    }
+
+    public static void main(String[] args) {
+        int[] aa = new int[]{1,23,4,5,6,23,5,1};
+        int[][] bb = new int[][]{{1,23},{4,5},{6,23},{5,1}};
+        Arrays.sort(aa);
+        Arrays.sort(bb,(a,b)->{
+            if(a[0]>b[0]){
+                return a[0]-b[0];
+            }else {
+                return a[1]-b[1];
+            }
+        });
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int[] temp = new int[s.length()];
+        ArrayList<Character> number = new ArrayList<>();
+        ArrayList<Character> character = new ArrayList<>();
+        for (int i = 0; i < s.length(); i++) {
+            if(Character.isDigit(s.charAt(i))){
+                temp[i] = 1;
+                number.add(s.charAt(i));
+            }else if(Character.isLetter(s.charAt(i))){
+                temp[i] = 2;
+                character.add(s.charAt(i));
+            }else {
+                temp[i] = 0;
+            }
+        }
+        number.sort((a,b)->b-a);
+        character.sort((a,b)->b-a);
+        StringBuilder sb = new StringBuilder();
+        int n = 0;
+        int m = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if(temp[i]==2){
+                sb.append(character.get(m));
+                m++;
+            }else if(temp[i]==1){
+                sb.append(number.get(n));
+                n++;
+            }else{
+                sb.append("?");
+            }
+        }
     }
 }
