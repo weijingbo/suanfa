@@ -1,19 +1,17 @@
 package LeetCode.Leet75;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class reverseWords {
     public static String reverseWords(String s) {
-        String[] strings = s.split(" ");
-        StringBuilder sb = new StringBuilder();
-        for (int i = strings.length-1; i >=0; i--) {
-            System.out.println(strings[i]);
-           if(!strings[i].contains(" ")){
-               sb.append(strings[i]);
-               sb.append(" ");
-           }
-        }
-        int index = sb.lastIndexOf(" ");
-        sb.deleteCharAt(index);
-        return sb.toString();
+        // 除去开头和末尾的空白字符
+        s = s.trim();
+        // 正则匹配连续的空白字符作为分隔符分割
+        List<String> wordList = Arrays.asList(s.split("\\s+"));
+        Collections.reverse(wordList);
+        return String.join(" ", wordList);
     }
 
     public static void main(String[] args) {
