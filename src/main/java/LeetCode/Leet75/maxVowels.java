@@ -21,7 +21,7 @@ public class maxVowels {
         int temp =res;
         left++;
         right++;
-        while(right<s.length()){
+        while(right<=s.length()){
             if(set.contains(s.charAt(left-1))){
                temp--;
             }
@@ -36,6 +36,6 @@ public class maxVowels {
     }
 
     public static void main(String[] args) {
-        System.out.println(maxVowels("novowels", 1));
+        System.out.println(maxVowels("weallloveyou", 7));
     }
 }
